@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Club Member</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101010;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111111, #174d4b);
+            padding: 35px 20px;
+            border-bottom: 5px solid #e83e8c;
+        }
+
+        h1 {
+            color: #00c5bd;
+        }
+
+        header p {
+            color: #ff9b42;
+        }
+
+        main {
+            background: #202020;
+            max-width: 550px;
+            margin: 50px auto;
+            padding: 35px;
+            border: 2px solid #00b8b0;
+            border-radius: 15px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            color: #ff9b42;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #00b8b0;
+            border-radius: 7px;
+            background: #151515;
+            color: white;
+        }
+
+        button {
+            margin-top: 22px;
+            padding: 12px 25px;
+            background: #00a9a2;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e83e8c;
+        }
+
+        #output {
+            background: #151515;
+            border-left: 4px solid #ff9b42;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            text-align: left;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Club Member</h1>
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name">
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name">
+
+    <button py-click="add_member">Add Member</button>
+
+    <div id="output"></div>
+
+    <script type="py" src="Drill.py"></script>
+
+</body>
+</html>

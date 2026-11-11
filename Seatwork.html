@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Club Checker</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #071a38;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #06142c, #0756a6);
+            padding: 35px 20px;
+            border-bottom: 5px solid #62b5ff;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        h2 {
+            color: #b9dfff;
+        }
+
+        header p {
+            color: #9dccff;
+        }
+
+        main {
+            background: #102b50;
+            max-width: 550px;
+            margin: 50px auto;
+            padding: 35px;
+            border: 2px solid #3185d6;
+            border-radius: 15px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            color: #b9dfff;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #62b5ff;
+            border-radius: 7px;
+            background: #071a38;
+            color: white;
+        }
+
+        button {
+            margin-top: 22px;
+            padding: 12px 25px;
+            background: #1684df;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #62b5ff;
+            color: #071a38;
+        }
+
+        #result {
+            background: #071a38;
+            border-left: 4px solid #62b5ff;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ICT Club Checker</h1>
+    <h2>Candidate Verification System</h2>
+
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname">
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname">
+
+    <button py-click="view_user">Check Candidate</button>
+
+    <div id="result"></div>
+
+    <script type="py" src="Seatwork.py"></script>
+
+</body>
+</html>
